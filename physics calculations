@@ -1,36 +1,61 @@
 
-# Python Program for 5 Physics Formulas
+# PYTHON PROGRAM FOR 5 PHYSICS FORMULAS
 
-print("=== FIVE PHYSICS FORMULAS ===")
+print("===== FIVE PHYSICS FORMULAS =====")
 
-# 1. Speed = Distance / Time
-distance = float(input("Enter distance (meters): "))
-time = float(input("Enter time (seconds): "))
+# 1. SPEED = DISTANCE / TIME
+distance = 100
+time = 20
 speed = distance / time
-print("1. Speed =", speed, "m/s")
 
-# 2. Force = Mass × Acceleration
-mass = float(input("\nEnter mass (kg): "))
-acceleration = float(input("Enter acceleration (m/s²): "))
+print("\n1. SPEED")
+print("Distance =", distance, "m")
+print("Time =", time, "s")
+print("Speed =", speed, "m/s")
+
+
+# 2. FORCE = MASS × ACCELERATION
+mass = 10
+acceleration = 5
 force = mass * acceleration
-print("2. Force =", force, "Newtons")
 
-# 3. Work Done = Force × Distance
-force = float(input("\nEnter force (N): "))
-distance = float(input("Enter distance (m): "))
+print("\n2. FORCE")
+print("Mass =", mass, "kg")
+print("Acceleration =", acceleration, "m/s^2")
+print("Force =", force, "N")
+
+
+# 3. WORK DONE = FORCE × DISTANCE
+force = 20
+distance = 5
 work = force * distance
-print("3. Work Done =", work, "Joules")
 
-# 4. Density = Mass / Volume
-mass = float(input("\nEnter mass (kg): "))
-volume = float(input("Enter volume (m³): "))
+print("\n3. WORK DONE")
+print("Force =", force, "N")
+print("Distance =", distance, "m")
+print("Work Done =", work, "J")
+
+
+# 4. DENSITY = MASS / VOLUME
+mass = 50
+volume = 10
 density = mass / volume
-print("4. Density =", density, "kg/m³")
 
-# 5. Power = Work Done / Time
-work = float(input("\nEnter work done (J): "))
-time = float(input("Enter time (s): "))
+print("\n4. DENSITY")
+print("Mass =", mass, "kg")
+print("Volume =", volume, "m^3")
+print("Density =", density, "kg/m^3")
+
+
+# 5. POWER = WORK DONE / TIME
+work = 200
+time = 10
 power = work / time
-print("5. Power =", power, "Watts")
 
-print("\n=== CALCULATIONS COMPLETED ===")
+print("\n5. POWER")
+print("Work Done =", work, "J")
+print("Time =", time, "s")
+print("Power =", power, "Watts")
+
+
+print("\n===== END OF PROGRAM =====")
