@@ -1,0 +1,45 @@
+def calculate_kinetic_energy(mass: float, velocity: float) -> float:
+"""Calculates Kinetic Energy: KE = 0.5 * m * v^2"""
+return 0.5 * mass * (velocity ** 2)
+
+def calculate_force(mass: float, acceleration: float) -> float:
+"""Calculates Force (Newton's Second Law): F = m * a"""
+return mass * acceleration
+
+def calculate_potential_energy(mass: float, height: float, gravity: float = 9.81) -> float:
+"""Calculates Gravitational Potential Energy: PE = m * g * h"""
+return mass * gravity * height
+
+def calculate_voltage(current: float, resistance: float) -> float:
+"""Calculates Voltage (Ohm's Law): V = I * R"""
+return current * resistance
+
+def calculate_wave_speed(frequency: float, wavelength: float) -> float:
+"""Calculates Wave Speed: v = f * lambda"""
+return frequency * wavelength
+
+if name == "main":
+print("=" * 40)
+print(" PHYSICS FORMULA CALCULATOR ")
+print("=" * 40)
+
+# 1. Kinetic Energy (Mass in kg, Velocity in m/s)
+ke = calculate_kinetic_energy(mass=70, velocity=10)
+print(f"1. Kinetic Energy: {ke} Joules")
+
+# 2. Force (Mass in kg, Acceleration in m/s^2)
+force = calculate_force(mass=50, acceleration=9.81)
+print(f"2. Force: {force:.2f} Newtons")
+
+# 3. Gravitational Potential Energy (Mass in kg, Height in m)
+pe = calculate_potential_energy(mass=60, height=5)
+print(f"3. Potential Energy: {pe:.2f} Joules")
+
+# 4. Ohm's Law (Current in Amperes, Resistance in Ohms)
+voltage = calculate_voltage(current=2.5, resistance=8)
+print(f"4. Voltage: {voltage} Volts")
+
+# 5. Wave Speed (Frequency in Hz, Wavelength in m)
+wave_speed = calculate_wave_speed(frequency=50, wavelength=2.5)
+print(f"5. Wave Speed: {wave_speed} m/s")
+print("=" * 40)
